@@ -6,7 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class LocationVacApplication {
 
-	// test
+	// pas de test
+	//blabla
     public static void main(String[] args) {
         SpringApplication.run(LocationVacApplication.class, args);
     }
