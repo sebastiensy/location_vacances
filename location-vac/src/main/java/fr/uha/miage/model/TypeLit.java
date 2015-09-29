@@ -17,6 +17,22 @@ public class TypeLit {
 	@GeneratedValue
 	private int idTlit;
 	
+	public int getIdTlit() {
+		return idTlit;
+	}
+
+	public void setIdTlit(int idTlit) {
+		this.idTlit = idTlit;
+	}
+
+	public String getNomTlit() {
+		return nomTlit;
+	}
+
+	public void setNomTlit(String nomTlit) {
+		this.nomTlit = nomTlit;
+	}
+
 	private String nomTlit;
 	
 }

@@ -13,6 +13,22 @@ import javax.persistence.OneToMany;
 @Entity
 public class TypeSdb {
 	
+	public int getIdTsdb() {
+		return idTsdb;
+	}
+
+	public void setIdTsdb(int idTsdb) {
+		this.idTsdb = idTsdb;
+	}
+
+	public String getNomTsdb() {
+		return nomTsdb;
+	}
+
+	public void setNomTsdb(String nomTsdb) {
+		this.nomTsdb = nomTsdb;
+	}
+
 	@Id
 	@GeneratedValue
 	private int idTsdb;
