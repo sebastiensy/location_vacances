@@ -35,7 +35,7 @@ public class Location {
 	
 	
 	
-	// pr unze loc on a plusireurs chambre
+	// pr une loc= plusieurs chambres
 	@OneToMany
 	private List<Chambre> chambres;
 	
