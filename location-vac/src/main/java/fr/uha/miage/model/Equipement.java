@@ -1,8 +1,11 @@
 package fr.uha.miage.model;
 
+import java.util.Set;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.ManyToMany;
 
 @Entity
 public class Equipement {
@@ -29,5 +32,11 @@ public class Equipement {
 		this.nomEquip = nomEquip;
 	}
 	
+	// pour indiquer qu'on trouve les equipements de la classe location
+	@ManyToMany(mappedBy = "equipements")
+	Set<Location> location;
+	public Set<Location> getLocation() {
+	        return location;
+	}
 	
 }

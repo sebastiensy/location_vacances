@@ -1,7 +1,9 @@
 package fr.uha.miage.model;
 
 import java.sql.Date;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -165,8 +167,14 @@ public class Location {
 		this.photos = photos;
 	}
 	
-	
-	
+	// table de jointure avoirEquip
+	@ManyToMany
+	@JoinTable(name="AvoirEquip",joinColumns = @JoinColumn(name="idLoc"),
+	inverseJoinColumns = @JoinColumn(name="idEquip"))
+	Set<Equipement> equipements = new HashSet<Equipement>();
+	public Set<Equipement> getEquipements() {
+	        return equipements;
+	}
 	
 	
 	
