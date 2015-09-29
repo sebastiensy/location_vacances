@@ -1,8 +1,11 @@
 package fr.uha.miage.model;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 @Entity
 public class TypePropriete {
@@ -12,6 +15,9 @@ public class TypePropriete {
 	private int idTp;
 	
 	private String nomTp;
+	
+	@OneToMany
+	private List<Location> locs;
 
 	public int getIdTp() {
 		return idTp;

@@ -13,7 +13,7 @@ public class DateDispo {
 	@GeneratedValue
 	private int idDateDispo;
 	
-	private Date datDebutDispo;
+	private Date dateDebutDispo;
 	private Date dateFinDispo;
 	public int getIdDateDispo() {
 		return idDateDispo;
@@ -22,10 +22,10 @@ public class DateDispo {
 		this.idDateDispo = idDateDispo;
 	}
 	public Date getDatDebutDispo() {
-		return datDebutDispo;
+		return dateDebutDispo;
 	}
 	public void setDatDebutDispo(Date datDebutDispo) {
-		this.datDebutDispo = datDebutDispo;
+		this.dateDebutDispo = datDebutDispo;
 	}
 	public Date getDateFinDispo() {
 		return dateFinDispo;
