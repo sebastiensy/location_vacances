@@ -16,6 +16,26 @@ public class Chambre {
 	private int idChambre;
 	
 	
+	public int getIdChambre() {
+		return idChambre;
+	}
+
+
+	public void setIdChambre(int idChambre) {
+		this.idChambre = idChambre;
+	}
+
+
+	public Location getLoc() {
+		return loc;
+	}
+
+
+	public void setLoc(Location loc) {
+		this.loc = loc;
+	}
+
+
 	// many to one (1,1 >> 1,N)
 	@ManyToOne
 	@JoinColumn(name = "idLoc")
