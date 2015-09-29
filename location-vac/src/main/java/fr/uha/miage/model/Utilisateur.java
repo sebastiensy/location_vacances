@@ -11,72 +11,72 @@ public class Utilisateur {
 	
 	@Id
 	@GeneratedValue
-	private int id;
+	private int idUser;
 	
-	private String nom;
-	private String prenom;
-	private String email;
-	private String mdp;
-	private Date dateNaissance;
-	private String tel;
-	private boolean droit;
-	private String photo;
+	private String nomUser;
+	private String prenomUser;
+	private String emailUser;
+	private String mdpUser;
+	private Date dateNaissanceUser;
+	private String telUser;
+	private boolean droitUser;
+	private String photoUser;
 	
+	public int getIdUser() {
+		return idUser;
+	}
+	public void setIdUser(int idUser) {
+		this.idUser = idUser;
+	}
+	public String getNomUser() {
+		return nomUser;
+	}
+	public void setNomUser(String nomUser) {
+		this.nomUser = nomUser;
+	}
+	public String getPrenomUser() {
+		return prenomUser;
+	}
+	public void setPrenomUser(String prenomUser) {
+		this.prenomUser = prenomUser;
+	}
+	public String getEmailUser() {
+		return emailUser;
+	}
+	public void setEmailUser(String emailUser) {
+		this.emailUser = emailUser;
+	}
+	public String getMdpUser() {
+		return mdpUser;
+	}
+	public void setMdpUser(String mdpUser) {
+		this.mdpUser = mdpUser;
+	}
+	public Date getDateNaissanceUser() {
+		return dateNaissanceUser;
+	}
+	public void setDateNaissanceUser(Date dateNaissanceUser) {
+		this.dateNaissanceUser = dateNaissanceUser;
+	}
+	public String getTelUser() {
+		return telUser;
+	}
+	public void setTelUser(String telUser) {
+		this.telUser = telUser;
+	}
+	public boolean isDroitUser() {
+		return droitUser;
+	}
+	public void setDroitUser(boolean droitUser) {
+		this.droitUser = droitUser;
+	}
+	public String getPhotoUser() {
+		return photoUser;
+	}
+	public void setPhotoUser(String photoUser) {
+		this.photoUser = photoUser;
+	}
 	
-	public int getId() {
-		return id;
-	}
-	public void setId(int id) {
-		this.id = id;
-	}
-	public String getNom() {
-		return nom;
-	}
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
-	public String getPrenom() {
-		return prenom;
-	}
-	public void setPrenom(String prenom) {
-		this.prenom = prenom;
-	}
-	public String getEmail() {
-		return email;
-	}
-	public void setEmail(String email) {
-		this.email = email;
-	}
-	public String getMdp() {
-		return mdp;
-	}
-	public void setMdp(String mdp) {
-		this.mdp = mdp;
-	}
-	public Date getDateNaissance() {
-		return dateNaissance;
-	}
-	public void setDateNaissance(Date dateNaissance) {
-		this.dateNaissance = dateNaissance;
-	}
-	public String getTel() {
-		return tel;
-	}
-	public void setTel(String tel) {
-		this.tel = tel;
-	}
-	public boolean isDroit() {
-		return droit;
-	}
-	public void setDroit(boolean droit) {
-		this.droit = droit;
-	}
-	public String getPhoto() {
-		return photo;
-	}
-	public void setPhoto(String photo) {
-		this.photo = photo;
-	}
 	
 	
 	
