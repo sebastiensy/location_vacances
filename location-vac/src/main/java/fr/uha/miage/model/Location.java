@@ -176,6 +176,13 @@ public class Location {
 	        return equipements;
 	}
 	
-	
+	// table de jointure possederTypeSdb
+	@ManyToMany
+	@JoinTable(name="PossederTypeSdb",joinColumns = @JoinColumn(name="idLoc"),
+	inverseJoinColumns = @JoinColumn(name="idTsdb"))
+	Set<TypeSdb> typeSdb = new HashSet<TypeSdb>();
+	public Set<TypeSdb> getTypeSdb() {
+	        return typeSdb;
+	}
 	
 }
